@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ssh script"
+version = "0.1.0"
+description = ""
+authors = ["eugeni"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+paramiko = "^3.5.0"
+scp = "^0.15.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
