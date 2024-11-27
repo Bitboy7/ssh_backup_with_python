@@ -8,6 +8,7 @@ Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
 
 ```sh
 poetry install
+```
 
 ## Ejecución del Proyecto
 
@@ -17,14 +18,14 @@ Para ejecutar el proyecto, sigue estos pasos:
     ```sh
     git clone https://github.com/Bitboy7/ssh_backup_with_python.git
     cd ssh_backup_with_python
-    
+    ```
 
 2. Crea el archivo `.env` y configura las variables de entorno.
 
 3. Ejecuta el script:
     ```sh
     mysql_backup.bat
-    
+    ```
 
 Puedes programar una tarea en Windows para ejecutar de manera automática.
 
