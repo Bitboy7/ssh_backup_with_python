@@ -10,23 +10,26 @@ Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
 poetry install
 ```
 
-Ejecución del Proyecto
+## Ejecución del Proyecto
+
 Para ejecutar el proyecto, sigue estos pasos:
 
-Clona el repositorio desde GitHub:
-```sh
-git clone https://github.com/tu_usuario/tu_repositorio.git
-cd tu_repositorio
-```
+1. Clona el repositorio desde GitHub:
+    ```sh
+    git clone https://github.com/Bitboy7/ssh_backup_with_python.git
+    cd ssh_backup_with_python
+    ```
 
-Crea el archivo .env y configura las variables de entorno.
+2. Crea el archivo `.env` y configura las variables de entorno.
 
-Ejecuta el script:
-```sh
-mysql_backup.bat
-```
-Puedes programar una tarea en Windows para ejecutar de manera automatica
+3. Ejecuta el script:
+    ```sh
+    mysql_backup.bat
+    ```
 
-Notas
-Asegúrate de tener MySQL Server instalado y configurado correctamente.
-Modifica las variables en mysql_backup.bat según tus necesidades (usuario, contraseña, nombre de la base de datos y directorio del proyecto).
+Puedes programar una tarea en Windows para ejecutar de manera automática.
+
+## Notas
+
+- Asegúrate de tener MySQL Server instalado y configurado correctamente.
+- Modifica las variables en `mysql_backup.bat` según tus necesidades (usuario, contraseña, nombre de la base de datos y directorio del proyecto).
