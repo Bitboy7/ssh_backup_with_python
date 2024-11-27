@@ -1,2 +1,32 @@
-Instalar dependencias:
+# Proyecto de Copia de Seguridad MySQL
+
+Este proyecto realiza copias de seguridad de una base de datos MySQL y ejecuta un script de Python utilizando Poetry.
+
+## Instalación de Dependencias
+
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
+
+```sh
 poetry install
+```
+
+Ejecución del Proyecto
+Para ejecutar el proyecto, sigue estos pasos:
+
+Clona el repositorio desde GitHub:
+```sh
+git clone https://github.com/tu_usuario/tu_repositorio.git
+cd tu_repositorio
+```
+
+Crea el archivo .env y configura las variables de entorno.
+
+Ejecuta el script:
+```sh
+mysql_backup.bat
+```
+Puedes programar una tarea en Windows para ejecutar de manera automatica
+
+Notas
+Asegúrate de tener MySQL Server instalado y configurado correctamente.
+Modifica las variables en mysql_backup.bat según tus necesidades (usuario, contraseña, nombre de la base de datos y directorio del proyecto).

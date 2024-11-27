@@ -1,8 +1,9 @@
 import os
+import datetime
 from paramiko import SSHClient, AutoAddPolicy
 from scp import SCPClient
-
 from dotenv import load_dotenv
+
 load_dotenv()
 
 def ssh_copy_folder_with_password():
@@ -19,6 +20,9 @@ def ssh_copy_folder_with_password():
         print("Error: Faltan variables de entorno necesarias. Por favor, configúralas.")
         return
 
+    # Calcular la fecha límite (hace tres días)
+    cutoff_date = datetime.datetime.now() - datetime.timedelta(days=3)
+
     try:
         # Crear conexión SSH
         ssh = SSHClient()
@@ -27,12 +31,20 @@ def ssh_copy_folder_with_password():
 
         # Crear cliente SCP
         with SCPClient(ssh.get_transport()) as scp:
-            print(f"Copiando la carpeta '{local_folder}' al servidor...")
-            scp.put(local_folder, remote_path, recursive=True, preserve_times=True)
-            print(f"Carpeta '{local_folder}' copiada exitosamente a '{remote_path}' en el servidor.")
+            print(f"Copiando archivos de respaldo de hace tres días de '{local_folder}' al servidor...")
+
+            # Filtrar y copiar archivos modificados hace tres días
+            for root, dirs, files in os.walk(local_folder):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    file_mtime = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))
+                    if file_mtime >= cutoff_date:
+                        remote_file_path = os.path.join(remote_path, os.path.relpath(file_path, local_folder))
+                        scp.put(file_path, remote_file_path,recursive=True, preserve_times=True)
+                        print(f"Archivo '{file_path}' copiado exitosamente a '{remote_file_path}' en el servidor.")
 
     except Exception as e:
-        print(f"Error al copiar la carpeta: {e}")
+        print(f"Error al copiar los archivos: {e}")
 
     finally:
         # Cerrar conexión SSH
