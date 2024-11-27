@@ -1,6 +1,6 @@
 # Proyecto de Copia de Seguridad 
 
-![Backup](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWQ2MjhweDlrZWliaG9zNHUzYzMzdGM1NHUwbjV3azU2eGo2djk5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n1dFDLwXu4Qkwy7OJ0/giphy.webp)
+![Backup](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzg4endnd241NmdhZWQwd2tzZ3pqOG80bTBpMzgyaWg3cWJ5YmpvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i229PTC8BKt9V9RnwZ/giphy.webp)
 
 Este proyecto realiza copias de seguridad de una base de datos MySQL y ejecuta un script de Python utilizando Poetry.
 
