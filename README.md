@@ -1,4 +1,4 @@
-# Backups automaticos por ssh
+# Backups automáticos por ssh
 
 ![Backup](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzg4endnd241NmdhZWQwd2tzZ3pqOG80bTBpMzgyaWg3cWJ5YmpvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/i229PTC8BKt9V9RnwZ/giphy.webp)
 
