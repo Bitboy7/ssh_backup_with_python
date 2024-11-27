@@ -1,14 +1,8 @@
-# Proyecto de Copia de Seguridad MySQL
+# Proyecto de Copia de Seguridad 
+
+![Backup](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWQ2MjhweDlrZWliaG9zNHUzYzMzdGM1NHUwbjV3azU2eGo2djk5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n1dFDLwXu4Qkwy7OJ0/giphy.webp)
 
 Este proyecto realiza copias de seguridad de una base de datos MySQL y ejecuta un script de Python utilizando Poetry.
-
-## Instalación de Dependencias
-
-Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
-
-```sh
-poetry install
-```
 
 ## Ejecución del Proyecto
 
@@ -22,7 +16,20 @@ Para ejecutar el proyecto, sigue estos pasos:
 
 2. Crea el archivo `.env` y configura las variables de entorno.
 
-3. Ejecuta el script:
+## Instalación de Dependencias
+
+3. instalar las dependencias del proyecto.
+
+(Si no tienes poetry instalado de manera global usa)
+```sh
+pip install poetry
+```
+Ejecuta el siguiente comando:
+```sh
+poetry install
+```
+
+4. Ejecuta el script:
     ```sh
     mysql_backup.bat
     ```
